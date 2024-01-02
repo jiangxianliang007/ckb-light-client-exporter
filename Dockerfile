@@ -5,4 +5,4 @@ COPY ./light-client-exporter.py ./requirements.txt /config/
 RUN pip3 install -r requirements.txt
 ENV PORT=3000
 
-CMD "python3" "light_client_exporter.py" "$light_client_rpc"
+CMD "python3" "light-client-exporter.py" "$light_client_rpc"
